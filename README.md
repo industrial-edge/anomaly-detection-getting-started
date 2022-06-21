@@ -1,8 +1,8 @@
-# Anomaly Detection getting started tutorial
+# Anomayl Detection getting started tutorial 
 
 This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze multiple time series data.
 
-- [Anomaly Detection getting started tutorial](# Anomaly Detection getting started tutorial)
+- [Anomaly Detection getting started tutorial](#anomaly-detection-getting-started)
   - [Description](#description)
     - [Overview](#overview)
     - [General task](#general-task)
@@ -16,9 +16,6 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Licence and Legal Information](#licence-and-legal-information)
 
 
-* [Google Developer style guide](https://developers.google.com/style)
-* [Technical writing Courses](https://developers.google.com/tech-writing)
-* [Microsoft Writing Style Guide](https://docs.microsoft.com/cs-cz/style-guide/welcome/)
 
 Then decide: Are you writing a tutorial or a how-to guide?
 
