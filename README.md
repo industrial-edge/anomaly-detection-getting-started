@@ -1,6 +1,20 @@
-# Writing good how-to or tutorial
+# Anomaly Detection getting started tutorial
 
-Before you start writing, read the following materials how to write good documentation (including how-tos).
+This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze multiple time series data.
+
+- [Anomaly Detection getting started tutorial](# Anomaly Detection getting started tutorial)
+  - [Description](#description)
+    - [Overview](#overview)
+    - [General task](#general-task)
+  - [Requirements](#requirements)
+    - [Prerequisites](#prerequisites)
+    - [Used components](#used-components)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Documentation](#documentation)
+  - [Contribution](#contribution)
+  - [Licence and Legal Information](#licence-and-legal-information)
+
 
 * [Google Developer style guide](https://developers.google.com/style)
 * [Technical writing Courses](https://developers.google.com/tech-writing)
