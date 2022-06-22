@@ -96,7 +96,7 @@
 
 - If an anomaly is detected you can go to the analysis view in the menu on the right side
 
-<p align="center"><kbd><img src="graphics/13AssetOverview.PNG" /></kbd></p>
+<p align="center"><kbd><img src="graphics/14AnomalyView.PNG" /></kbd></p>
 
 - Every time the calculated deviation is higher than the threshold a anomaly is detected
 - The get the main contributors of the anomaly you have to click on the anomaly marker (red marked)
