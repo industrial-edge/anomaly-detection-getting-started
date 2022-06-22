@@ -22,7 +22,7 @@ To run the simulation the folloing components are needed:
 
 First of all make sure that you have created a databus user which has subscription rights with the topic 'ie/#'.
 
-<p align="center"><kbd><img src="docs/graphics/01iedatabus.PNG" /></kbd></p>
+<p align="center"><kbd><img src="graphics/01iedatabus.PNG" /></kbd></p>
 
 ## Configure Data Service Adapter
 
@@ -34,7 +34,7 @@ First of all make sure that you have created a databus user which has subscripti
   - Your own databus credentials
   - Metadata topic ie/m/j/simatic/v1/sim/dp
 
-<p align="center"><kbd><img src="docs/graphics/02AddNewAdapter.PNG" /></kbd></p>
+<p align="center"><kbd><img src="graphics/02AddNewAdapter.PNG" /></kbd></p>
 
 
 - Open console in the source code folder
