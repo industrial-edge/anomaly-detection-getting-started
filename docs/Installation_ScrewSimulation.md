@@ -58,15 +58,15 @@ First of all make sure that you have created a databus user which has subscripti
 
 - After the flow import you have to adapt the databus credentials in the MQTT-Out nodes (red marked).
 
-- Therefore double click on one of them and and select the pen icon next to the server section (blue marked).
+- Therefore double click on one of them and and select the pen icon next to the 'Server' section (blue marked).
 
 <p align="center"><kbd><img src="graphics/06EditDataBus.PNG" /></kbd></p>
 
-Now go to the Security section and enter your databus credentials again.
+- Go to the Security section and enter your databus credentials again.
 
 <p align="center"><kbd><img src="graphics/07EditDataBusSecurity.png" /></kbd></p>
 
- - Now you can click on Update and deploy the flow. 
+ - Now you can click on 'Update' and 'Deploy' the flow. 
 
 
 ## Start Simulation and add variables to IE Data Service
