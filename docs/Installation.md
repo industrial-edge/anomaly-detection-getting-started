@@ -89,11 +89,11 @@
 
 ## View live models
 
-- In the Assets section you have overview of all currently running Anomaly Detection models
+- In the Assets section you have an overview of all currently running Anomaly Detection models
 
 <p align="center"><kbd><img src="graphics/13AssetOverview.PNG" /></kbd></p>
 
-- If an anomaly is detected you can go to the analysis view in the menu on the right side
+- If an anomaly is detected you can go to the analysis view in the menu on the right side to get a detailed view
 
 <p align="center"><kbd><img src="graphics/14AnomalyView.PNG" /></kbd></p>
 
