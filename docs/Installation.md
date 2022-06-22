@@ -77,7 +77,7 @@
 
 <p align="center"><kbd><img src="graphics/10TrainResults.PNG" /></kbd></p>
 
-- To only get the calculated deviation displayed you can hide the feature signal in the 'Feutures' section (red marked) by clicking on the 'eye' icons
+- To only get the calculated deviation displayed you can hide the feature signal in the 'Features' section (red marked) by clicking on the 'eye' icons
 
 <p align="center"><kbd><img src="graphics/11DeviationDetails.PNG" /></kbd></p>
 
@@ -90,7 +90,13 @@
 
 ## View live models
 
-### Asset view
+- In the Assets section you have overview of all currently running Anomaly Detection models
 
-### Anomaly view
+<p align="center"><kbd><img src="graphics/13AssetOverview.PNG" /></kbd></p>
 
+- If an anomaly is detected you can go to the analysis view in the menu on the right side
+
+<p align="center"><kbd><img src="graphics/13AssetOverview.PNG" /></kbd></p>
+
+- Every time the calculated deviation is higher than the threshold a anomaly is detected
+- The get the main contributors of the anomaly you have to click on the anomaly marker (red marked)
