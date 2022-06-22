@@ -16,31 +16,18 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Licence and Legal Information](#licence-and-legal-information)
 
 
-
-Then decide: Are you writing a tutorial or a how-to guide?
-
-[Divio](https://documentation.divio.com/) explains the difference  (Note that this applies for software documentation for application developers)
-
-* Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it. https://documentation.divio.com/tutorials/
-* How-to guides take the reader through the steps required to solve a real-world problem
-
-Each have a different writing style. Tutorials must be bullet proof (no unexpected behavior) https://documentation.divio.com/how-to-guides/
-
-Note: Try to write the tutorials and how-tos as a standalone html page, ready to be generated using Static site generator [MkDocs](https://www.mkdocs.org/). When referencing code examples or files, use the full URL of the git repository. We want to reuse these how-tos and tutorials in Documentation website.
-
-Don't explain concepts. [It gets in a way of action](https://documentation.divio.com/how-to-guides/#don-t-explain-concepts).  
-
-Don't use HTML tags unless working with videos. And try to avoid using videos unless absolutely necessary. Don't upload videos to Git repository.
-
 ## Description
 
 ### Overview
 
-Why has been this how-to/tutorial created? What is the purpose?
+This tutorial should lead you through the setup process of the Anomaly Detection App.  
 
 ### General Task
 
-What is the general goal/task of this how-to/tutorial?
+- You will see how to select the data and transform it for the machine learning model training. 
+- After that you will see how to acutally define the the model parameters and start the training. 
+- In the last step you will start the live detection.
+
 
 ![task](docs/graphics/example_graphic.png)
 
