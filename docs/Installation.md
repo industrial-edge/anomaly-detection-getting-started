@@ -8,8 +8,7 @@
     - [Define algorithm and perform training](#define-algorithm-and-perform-training)
     - [Set threshold and deploy model](#set-threshold-and-deploy-model)
   - [View live models](#view-live-models)
-    - [Asset view](#asset-view)
-    - [Anomaly view](#anomaly-view)
+  
 
   
 ## Build application
