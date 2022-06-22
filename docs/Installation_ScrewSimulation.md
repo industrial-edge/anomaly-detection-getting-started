@@ -42,17 +42,17 @@ First of all make sure that you have created a databus user which has subscripti
 
 ## Configure IE Flow Creator
 
-After we configured the Data Service Adatper we are now going to configure the actual Simulation which is publishing the data onto the databus. 
+- After we created the Data Service Adatper we are now going to configure the actual simulation, which is publishing data onto the databus. 
 
 ### Import Flow
 
-First open the IE Flow Creator application and open the 'burger menue' in the top right cornern. 
+- First open the IE Flow Creator application and open the 'burger menue' in the top right cornern. 
 
-There you select 'Import' or you use the shortcut 'ctrl-i'.
+- Select 'Import' or you use the shortcut 'ctrl-i'.
 
 <p align="center"><kbd><img src="graphics/05ImportFlow.PNG" /></kbd></p>
 
-Now import the JSON file which can be downloaded [in the src folder](../src).
+- Import the JSON file which can be downloaded [in the src folder](../src).
 
 ### Edit Databus Credentials
 
@@ -64,9 +64,9 @@ Now import the JSON file which can be downloaded [in the src folder](../src).
 
 Now go to the Security section and enter your databus credentials again.
 
-<p align="center"><kbd><img src="graphics/07EditDataBusSecurity.PNG" /></kbd></p>
+<p align="center"><kbd><img src="graphics/07EditDataBusSecurity.png" /></kbd></p>
 
- -Now you can click und update and deploy the whole flow. 
+ - Now you can click on Update and deploy the flow. 
 
 
 ## Start Simulation and add variables to IE Data Service
