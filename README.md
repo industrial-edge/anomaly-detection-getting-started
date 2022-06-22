@@ -10,7 +10,6 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
     - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
   - [Configuration steps](#configuration-steps)
-  - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
   - [Licence and Legal Information](#licence-and-legal-information)
@@ -50,17 +49,10 @@ This document describes how to create an Anomaly Detection model. This model is 
 
 ## Configuration steps
 
-* [Build application](docs/Installation.md#build-application)
-
-## Usage
-
-When the app is installed, how can I use it? Usually some basic UI description to prove that the app is working correctly.
+* [Build the Data simulation Application](docs/Installation_ScrewSimulation.md)
+* [Setup the Anomaly Detection](docs/Installation.md)
 
 ## Documentation
-
-Add links to documentation. Either on external URL or in the doc folder. Please use always link to a file not to a directory (it doesn't work with static site generator engines).
-
-Add these links:
 
 You can find further documentation and help in the following links
 
