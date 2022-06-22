@@ -56,5 +56,32 @@ Now import the JSON file which can be downloaded [in the src folder](../src).
 
 ### Edit Databus Credentials
 
+- After the flow import you have to adapt the databus credentials in the MQTT-Out nodes (red marked).
+
+- Therefore double click on one of them and and select the pen icon next to the server section (blue marked).
+
+<p align="center"><kbd><img src="graphics/06EditDataBus.PNG" /></kbd></p>
+
+Now go to the Security section and enter your databus credentials again.
+
+<p align="center"><kbd><img src="graphics/07EditDataBusSecurity.PNG" /></kbd></p>
+
+ -Now you can click und update and deploy the whole flow. 
+
+
 ## Start Simulation and add variables to IE Data Service
+
+- By clicking on the timestamp node (green marked) the simulation is startet.
+- First the metadata is sended and afterwards recorded values in the included CSV-File are going to be published on the databus every 100ms. 
+
+<p align="center"><kbd><img src="graphics/08StartSimulation.PNG" /></kbd></p>
+
+- Now Go back to the IE Data Service app and create an new Child Asset in the three point menue (red marked).
+- On the right side you have the option to add multiple variables to your asset (green marked)
+- Now Select the previously defined adapter (blue marked)
+- Add all six vaiables by slecting the checkboxes and save the configuration
+
+<p align="center"><kbd><img src="graphics/09AddTagsToDataService.PNG" /></kbd></p>
+
+
 
