@@ -1,6 +1,6 @@
 # Anomayl Detection getting started tutorial 
 
-This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze multiple time series data.
+This example shows how to use the Industrial Edge app "Anomaly Detection" to analyize your automation process. During this tutorial you will go through every single setup step to train a maschine learning model on time series imput data. 
 
 - [Anomaly Detection getting started tutorial](#anomaly-detection-getting-started)
   - [Description](#description)
@@ -9,7 +9,7 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Requirements](#requirements)
     - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
-  - [Installation](#installation)
+  - [Configuration steps](#onfiguration-steps)
   - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
@@ -20,7 +20,8 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
 
 ### Overview
 
-This tutorial should lead you through the setup process of the Anomaly Detection App.  
+This document describes how to create an Anomaly Detection model. This model is used to detect unormal behaviour in time series data. If an unormal behaviour is detected the app can be used to get a first impression what caused the problem and where to start the further investigation.  
+  
 
 ![task](docs/graphics/AnalyisView.PNG)
 
@@ -30,34 +31,24 @@ This tutorial should lead you through the setup process of the Anomaly Detection
 - After that you will see how to acutally define the the model parameters and start the training. 
 - In the last step you will start the live detection.
 
-
-
-
 ## Requirements
 
-### Prerequisites
 
-What are the requirements on the user knowledge, HW components before starting the how-to?
+
+### Prerequisites
+- Access to Industrial Edge Management System (IEM)
+- Onboarded Industrail Edge Device (IED) on IEM  
 
 ### Used components
 
-List the used software and hardware components that were tested with this how-to.
-Add the used components here (e.g.)
+* Industrial Edge Device V 1.5.x
+* IE Databus V1.6.6
+* IE Data Service V 1.3.3
+* IE Flow Creator V 1.3.8
+* Anomaly Detection V1.0.0
 
-* Industrial Edge App Publisher V1.0.8
-* Docker Engine 18.09.6
-* Docker Compose V2.4
-* S7 Connector V 1.0.22
-* S7 Connector Configurator V 1.0.9
-* Industrial Edge Device V 1.0.0-34
-* TIA Portal V16
-* PLC: CPU 1511 FW 2.8.3
 
-## Installation
-
-How to install/run this application example? (i.e. how to deploy it to Industrial Edge device?) How to build this application? How to set up configurations in IE?
-
-To keep the readme.md file as short as possible please add more detailed information in the docs folder.
+## Configuration steps
 
 * [Build application](docs/Installation.md#build-application)
 
