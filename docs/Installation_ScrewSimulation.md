@@ -26,7 +26,15 @@ First of all make sure that you have created a databus user which has subscripti
 
 ## Configure Data Service Adapter
 
+- Open the IE Data Service app and go to the adapter Section. 
 
+- There you have to add an new Adapter with:
+  - With a specific name you like
+  - the Broker URL: tcp://ie-databus:1883
+  - your own databus credentials
+  - the metadata topic ie/m/j/simatic/v1/sim/dp
+
+<p align="center"><kbd><img src="docs/graphics/02AddNewAdapter.PNG" /></kbd></p>
 
 
 - Open console in the source code folder
