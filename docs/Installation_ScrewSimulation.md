@@ -1,17 +1,33 @@
 # Installation of screwing simulation
 
+This installation guide shows how to Configure IE Databus, IE Data Service and the IE Flow Creator run a simulation which is then used to train our Anomaly Detection algorithm. 
+
+## Used Components
+
+To run the simulation the folloing components are needed:
+- IE Databus V1.6.6
+- IE FlowCreator V1.3.8
+- IE DataService V1.3.3
+
 - [Installation of screwing simulation](#Installation_ScrewSimulation)
+  - [Used Components](#used-components)
+  - [Configure IE Databus](#configure-ie-databus)
   - [Configure DataService Adapter](#Configure-DataService-Adapter)
   - [Configure IE Flow Creator](#configure-ie-flow-creator)
     - [Import Flow](#import-flow)
     - [Edit Databus Credentials](#edit-databus-credentials)
   - [Start Simulation and add variables to IE Data Service](#start-simulation-and-add-variables-to-ie-data-sservice)
  
-  
-## Configure DataService Adapter
+## Configure IE Databus
+
+First of all make sure that you have created a databus user which has subscription rights with the topic 'ie/#'.
+
+<p align="center"><kbd><img src="docs/graphics/iedatabus.PNG" /></kbd></p>
+
+## Configure Data Service Adapter
 
 
-Add instruction how to build your application, e.g.:
+
 
 - Open console in the source code folder
 - Use command `docker-compose build` to create the docker image.
