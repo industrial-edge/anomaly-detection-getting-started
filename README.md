@@ -22,6 +22,8 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
 
 This tutorial should lead you through the setup process of the Anomaly Detection App.  
 
+![task](docs/graphics/AnalyisView.PNG)
+
 ### General Task
 
 - You will see how to select the data and transform it for the machine learning model training. 
@@ -29,7 +31,7 @@ This tutorial should lead you through the setup process of the Anomaly Detection
 - In the last step you will start the live detection.
 
 
-![task](docs/graphics/example_graphic.png)
+
 
 ## Requirements
 
