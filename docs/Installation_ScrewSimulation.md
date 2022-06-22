@@ -50,9 +50,9 @@ First open the IE Flow Creator application and open the 'burger menue' in the to
 
 There you select 'Import' or you use the shortcut 'ctrl-i'.
 
-<p align="center"><kbd><img src="graphics/04ImportFlow.PNG" /></kbd></p>
+<p align="center"><kbd><img src="graphics/05ImportFlow.PNG" /></kbd></p>
 
-Now import the JSON file which can be downloaded [in the src folder](#../src).
+Now import the JSON file which can be downloaded [in the src folder](src).
 
 ### Edit Databus Credentials
 
