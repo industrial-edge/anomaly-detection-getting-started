@@ -9,7 +9,7 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Requirements](#requirements)
     - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
-  - [Configuration steps](#onfiguration-steps)
+  - [Configuration steps](#configuration-steps)
   - [Usage](#usage)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
