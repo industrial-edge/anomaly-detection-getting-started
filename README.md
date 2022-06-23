@@ -50,7 +50,7 @@ This document describes how to create an Anomaly Detection model. This model is 
 
 ## Configuration steps
 
-* [Build the Data simulation Application](docs/Installation_ScrewSimulation.md)
+* [Build the Data simulation application](docs/Installation_ScrewSimulation.md)
 * [Setup the Anomaly Detection](docs/Installation.md)
 
 ## Documentation
