@@ -17,7 +17,7 @@
 
 ### Create new model 
 
-- To create a new model go to the 'Model generation' section add a new model and give a specific name.
+- To create a new model, go to the 'Model generation' section add a new model and give a specific name.
 
 <p align="center"><kbd><img src="graphics/02NewModel.PNG" /></kbd></p>
 
@@ -25,7 +25,7 @@
 
 - Next step is to define a sample rate for your training data
 - Click on the 'Add variable' button and unhide the Asset structure on the left side. 
-- Then select all variables you want to use for your training (in case you are using the ScrewSimulation select all six values)
+- Then select all variables you want to use for your training (in case you are using the Screw Simulation select all six values)
 
 <p align="center"><kbd><img src="graphics/03SelectVariables.PNG" /></kbd></p>
 
@@ -43,7 +43,7 @@
 <p align="center"><kbd><img src="graphics/05DataTransformation.PNG" /></kbd></p>
 
 - In the screwing process we feed our model with force and torque vales in x,y and z direction. 
-- The x,y direction are representing the horizontal force values and therefore we are not intesent weather the force is performed in negativ or positiv direction, so we want the absolute values for our network training
+- The x,y direction are representing the horizontal force values and therefore we are not intesent weather the force is performed in negative or positive direction, so we want the absolute values for our network training
 
 <p align="center"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
 
@@ -55,15 +55,15 @@
 
 ### Define algorithm and perform training
 
-- Change to the 'Alorithm' section
+- Change to the 'Algorithm' section
 - Select Full Relationship Analysis
 - Set the Epochs to 20, which means that the defined time range we previously defined is used 20 times for the model training
-- Define a 0.2 Expontial smoothing of the calculated deviation curve
+- Define a 0.2 Exponential smoothing of the calculated deviation curve
 - Because we select the threshold for detected anomalies after the training we select the 'Only manually' method
 
 <p align="center"><kbd><img src="graphics/08AlgorithmSetting.PNG" /></kbd></p>
 
-- Now you can swtich to the 'Model calculation' section and start the model training. 
+- Now you can switch to the 'Model calculation' section and start the model training. 
 
 <p align="center"><kbd><img src="graphics/09ClacProcess.PNG" /></kbd></p>
 
@@ -80,9 +80,9 @@
 
 <p align="center"><kbd><img src="graphics/11DeviationDetails.PNG" /></kbd></p>
 
-- Now you set the threshold between 'normal' screwing process and the screwing processes where some unnormal behaviour occoured 
+- Now you set the threshold between 'normal' screwing process and the screwing processes where some unnormal behavior occurred 
 
-- When the threshold is set you can finally go to the 'Deploy' section and deploy your trained model
+- When the threshold is set, you can finally go to the 'Deploy' section and deploy your trained model
 
 <p align="center"><kbd><img src="graphics/12DeployModel.PNG" /></kbd></p>
 
