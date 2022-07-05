@@ -12,7 +12,7 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Configuration steps](#configuration-steps)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
-  - [Licence and Legal Information](#licence-and-legal-information)
+  - [Licence and Legal Information](#license-and-legal-information)
 
 
 ## Description
