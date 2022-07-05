@@ -94,4 +94,4 @@ First of all, make sure that you have created a databus user which has subscript
 <p align="center"><kbd><img src="graphics/09AddTagsToDataService.PNG" /></kbd></p>
 
 - The selected tags are now saved in the data service and can be used for the Anomaly Detection app
-- To configure the Anomaly Detection app you have to continue with the [Installation.md](docs/Installation.md)
+- To configure the Anomaly Detection app you have to continue with the [Installation.md](Installation.md)
