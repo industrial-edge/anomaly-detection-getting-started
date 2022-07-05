@@ -1,7 +1,7 @@
-# Installation
+# Setup Anomaly Detection
 
-- [Installation](#installation)
-  - [Build application](#build-application)
+- [Setup Anomaly Detection](#setup-anomaly-detection)
+  - [Start application](#start-application)
     - [Create new model](#create-new-model)
     - [Select data](#select-data)
     - [Transform and normalize data](#transform-and-normalize-data)
@@ -11,7 +11,9 @@
   
 
   
-## Build application
+## Start application
+
+- Open the Anomaly Detection App on or IED
 
 <p align="center"><kbd><img src="graphics/01AD_HomeScreen.PNG" /></kbd></p>
 
@@ -37,13 +39,14 @@
 <p align="center"><kbd><img src="graphics/04SetTimeRange.PNG" /></kbd></p>
 
 ### Transform and normalize data
-- After the raw input data for the model training is defined, data transformation and normalization can be performed 
-- By clicking on the connection between to nodes additional transformation nodes can be added. 
+- Before we feed the force values of your screwing simulation into the network we want to perform a data transformation 
+- Therefore click on the 'Data Transformation' section
+- By clicking on the connection between to nodes 'Fx' and 'Normalization' additional transformation nodes can be added, in this case select “abs”
+- Redo this step for the connection between the node 'Fy' and 'Normalization'
 
 <p align="center"><kbd><img src="graphics/05DataTransformation.PNG" /></kbd></p>
 
-- In the screwing process we feed our model with force and torque vales in x,y and z direction. 
-- The x,y direction are representing the horizontal force values and therefore we are not intesent weather the force is performed in negative or positive direction, so we want the absolute values for our network training
+
 
 <p align="center"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
 
@@ -53,10 +56,12 @@
 
 <p align="center"><kbd><img src="graphics/07CalculatedNormalization.PNG" /></kbd></p>
 
+- Now apply the values
+
 ### Define algorithm and perform training
 
 - Change to the 'Algorithm' section
-- Select Full Relationship Analysis
+- Select Full Relationship Analysis (if you use an IPC127 or IPC 227 this algorithm is already selected and cannot be changed)
 - Set the Epochs to 20, which means that the defined time range we previously defined is used 20 times for the model training
 - Define a 0.2 Exponential smoothing of the calculated deviation curve
 - Because we select the threshold for detected anomalies after the training we select the 'Only manually' method
@@ -98,4 +103,4 @@
 <p align="center"><kbd><img src="graphics/14AnomalyView.PNG" /></kbd></p>
 
 - Every time the calculated deviation is higher than the threshold a anomaly is detected
-- The get the main contributors of the anomaly you have to click on the anomaly marker (red marked)
+- To get the main contributors of the anomaly you have to click on the anomaly marker (red marked)
