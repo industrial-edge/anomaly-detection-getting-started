@@ -5,9 +5,9 @@
     - [Create new model](#create-new-model)
     - [Select data](#select-data)
     - [Transform and normalize data](#transform-and-normalize-data)
-    - [Define algorithm and perform training](#define-algorithm-and-perform-training)
-    - [Set threshold and deploy model](#set-threshold-and-deploy-model)
-  - [View live models](#view-live-models)
+    - [Define algorithm and perform model creation](#define-algorithm-and-perform-model-creation)
+    - [Set threshold and deploy model for Live Anomaly Detection](#set-threshold-and-deploy-model-for-live-anomaly-detection)
+  - [View Live Anomaly Detection model inference](#view-live-anomaly-detection-model-inference)
   
 
   
@@ -25,15 +25,16 @@
 
 ### Select data
 
-- Next step is to define a sample rate for your training data
+- Select relevant input data for the Anomaly Detection’s AI
 - Click on the 'Add variable' button and unhide the Asset structure on the left side. 
-- Then select all variables you want to use for your training (in case you are using the Screw Simulation select all six values)
+- Then select all variables you want to use for model creation (in case you are using the Screw Simulation select all six tags)
+- Next step is to define a sample rate for your input data
 
 <p align="center"><kbd><img src="graphics/03SelectVariables.PNG" /></kbd></p>
 
 - After you have selected the variables click on the 'Edit' icon in the 'Time range for model generation' section
 - On the top of the window you can enter a time range for displaying the data
-- The time range for the model training is then defined in the section at the bottom of the window (red marked)
+- The time range for the model creation will then be defined in the section at the bottom of the window (red marked)
 - This time range is then marked with the blue section in the data window 
 
 <p align="center"><kbd><img src="graphics/04SetTimeRange.PNG" /></kbd></p>
@@ -58,7 +59,7 @@
 
 - Now apply the values
 
-### Define algorithm and perform training
+### Define algorithm and perform model creation
 
 - Change to the 'Algorithm' section
 - Select Full Relationship Analysis (if you use an IPC127 or IPC 227 this algorithm is already selected and cannot be changed)
@@ -74,7 +75,7 @@
 
 - The model training may take a while (about 10 - 20 minutes depending on the selected time range and epochs) so feel free to grab a coffee ;-)
 
-### Set threshold and deploy model
+### Set threshold and deploy model for Live Anomaly Detection
 
 - The training is now completed 
 - The lower your training loss is at the last epoch the better your training performed as you can see in the chart in top right corner 
@@ -92,7 +93,7 @@
 <p align="center"><kbd><img src="graphics/12DeployModel.PNG" /></kbd></p>
 
 
-## View live models
+## View Live Anomaly Detection model inference
 
 - In the Assets section you have an overview of all currently running Anomaly Detection models
 
