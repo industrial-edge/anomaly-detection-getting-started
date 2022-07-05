@@ -19,16 +19,16 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
 
 ### Overview
 
-This document describes how to create an Anomaly Detection model. This model is used to detect unnormal behavior in time series data. If an unnormal behavior is detected, the app can be used to get a first impression what caused the problem and where to start the further investigation.   
+This document describes how to create an Anomaly Detection model. This model is used to detect abnormal behavior in time series data. If an unusual behavior is detected, the app can be used to identify such divergence and in some cases you’ll get a first impression what caused the problem and where to start the further investigation, e.g. to make a deep dive analysis with the Anomaly Detection.
   
 
 ![task](docs/graphics/AnalyisView.PNG)
 
 ### General Task
 
-- You will see how to select the data and transform it for the machine learning model training. 
+- You will learn how to select the incoming data and how to potentially transform this data in order to come up with a machine learning model 
 - After that you will see how to define the model parameters and start the training. 
-- In the last step you will start the live detection.
+- In the last step you will use this model for inference and start the Live Anomaly Detection
 
 
 ## Requirements
