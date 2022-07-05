@@ -1,4 +1,4 @@
-# Anomayl Detection getting started tutorial 
+# Anomaly Detection getting started tutorial 
 
 This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze your automation process. During this tutorial you will go through every single setup step to train a machine learning model on time series input data.
 
@@ -19,7 +19,7 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
 
 ### Overview
 
-This document describes how to create an Anomaly Detection model. This model is used to detect unnormal behavior in time series data. If an unnormal behavior is detected the app can be used to get a first impression what caused the problem and where to start the further investigation.   
+This document describes how to create an Anomaly Detection model. This model is used to detect unnormal behavior in time series data. If an unnormal behavior is detected, the app can be used to get a first impression what caused the problem and where to start the further investigation.   
   
 
 ![task](docs/graphics/AnalyisView.PNG)
@@ -50,8 +50,8 @@ This document describes how to create an Anomaly Detection model. This model is 
 
 ## Configuration steps
 
-* [Build the Data simulation application](docs/Installation_ScrewSimulation.md)
-* [Setup the Anomaly Detection](docs/Installation.md)
+* [Installation_ScrewSimulation.md](docs/Installation_ScrewSimulation.md)
+* [Installation](docs/Installation.md)
 
 ## Documentation
 
