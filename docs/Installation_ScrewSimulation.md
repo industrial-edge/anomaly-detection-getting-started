@@ -5,7 +5,7 @@ This installation guide shows how to Configure IE Databus, IE Data Service and t
 - [Installation of screwing simulation](#Installation_ScrewSimulation)
   - [Used Components](#used-components)
   - [Configure IE Databus](#configure-ie-databus)
-  - [Configure DataService Adapter](#configure-dataService-adapter)
+  - [Configure Data Service Adapter](#configure-data-service-adapter)
   - [Configure IE Flow Creator](#configure-ie-flow-creator)
     - [Import Flow](#import-flow)
     - [Edit Databus Credentials](#edit-databus-credentials)
