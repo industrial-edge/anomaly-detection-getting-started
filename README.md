@@ -50,8 +50,10 @@ This document describes how to create an Anomaly Detection model. This model is 
 
 ## Configuration steps
 
-* [Installation_ScrewSimulation](docs/Installation_ScrewSimulation.md)
-* [Installation](docs/Installation.md)
+To successfully run the application, you need to follow these steps:
+
+* [Installation of screwing simulation](/docs/Installation_ScrewSimulation.md)
+* [Setup anomaly detection](/docs/Installation.md)
 
 ## Documentation
 
