@@ -1,6 +1,6 @@
-# Anomayl Detection getting started tutorial 
+# Anomaly Detection getting started tutorial 
 
-This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze multiple time series data.
+This example shows how to use the Industrial Edge app "Anomaly Detection" to analyze your automation process. During this tutorial you will go through every single setup step to train a machine learning model on time series input data.
 
 - [Anomaly Detection getting started tutorial](#anomaly-detection-getting-started)
   - [Description](#description)
@@ -9,78 +9,53 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
   - [Requirements](#requirements)
     - [Prerequisites](#prerequisites)
     - [Used components](#used-components)
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Configuration steps](#configuration-steps)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
-  - [Licence and Legal Information](#licence-and-legal-information)
+  - [Licence and Legal Information](#license-and-legal-information)
 
-
-
-Then decide: Are you writing a tutorial or a how-to guide?
-
-[Divio](https://documentation.divio.com/) explains the difference  (Note that this applies for software documentation for application developers)
-
-* Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it. https://documentation.divio.com/tutorials/
-* How-to guides take the reader through the steps required to solve a real-world problem
-
-Each have a different writing style. Tutorials must be bullet proof (no unexpected behavior) https://documentation.divio.com/how-to-guides/
-
-Note: Try to write the tutorials and how-tos as a standalone html page, ready to be generated using Static site generator [MkDocs](https://www.mkdocs.org/). When referencing code examples or files, use the full URL of the git repository. We want to reuse these how-tos and tutorials in Documentation website.
-
-Don't explain concepts. [It gets in a way of action](https://documentation.divio.com/how-to-guides/#don-t-explain-concepts).  
-
-Don't use HTML tags unless working with videos. And try to avoid using videos unless absolutely necessary. Don't upload videos to Git repository.
 
 ## Description
 
 ### Overview
 
-Why has been this how-to/tutorial created? What is the purpose?
+This document describes how to create an Anomaly Detection model. This model is used to detect abnormal behavior in time series data. If an unusual behavior is detected, the app can be used to identify such divergence and in some cases you’ll get a first impression what caused the problem and where to start the further investigation, e.g. to make a deep dive analysis with the Anomaly Detection.
+  
+
+![task](docs/graphics/AnalyisView.PNG)
 
 ### General Task
 
-What is the general goal/task of this how-to/tutorial?
+- You will learn how to select the incoming data and how to potentially transform this data in order to come up with a machine learning model 
+- After that you will see how to define the model parameters and start the training. 
+- In the last step you will use this model for inference and start the Live Anomaly Detection
 
-![task](docs/graphics/example_graphic.png)
 
 ## Requirements
 
-### Prerequisites
 
-What are the requirements on the user knowledge, HW components before starting the how-to?
+
+### Prerequisites
+- Access to Industrial Edge Management System (IEM)
+- Onboarded Industrial Edge Device (IED) on IEM  
 
 ### Used components
 
-List the used software and hardware components that were tested with this how-to.
-Add the used components here (e.g.)
+* Industrial Edge Device V 1.5.x
+* IE Databus V1.6.6
+* IE Data Service V 1.3.3
+* IE Flow Creator V 1.3.8
+* Anomaly Detection V1.0.0
 
-* Industrial Edge App Publisher V1.0.8
-* Docker Engine 18.09.6
-* Docker Compose V2.4
-* S7 Connector V 1.0.22
-* S7 Connector Configurator V 1.0.9
-* Industrial Edge Device V 1.0.0-34
-* TIA Portal V16
-* PLC: CPU 1511 FW 2.8.3
 
-## Installation
+## Configuration steps
 
-How to install/run this application example? (i.e. how to deploy it to Industrial Edge device?) How to build this application? How to set up configurations in IE?
+To successfully run the application, you need to follow these steps:
 
-To keep the readme.md file as short as possible please add more detailed information in the docs folder.
-
-* [Build application](docs/Installation.md#build-application)
-
-## Usage
-
-When the app is installed, how can I use it? Usually some basic UI description to prove that the app is working correctly.
+* [Installation of screwing simulation](/docs/Installation_ScrewSimulation.md)
+* [Setup anomaly detection](/docs/Installation.md)
 
 ## Documentation
-
-Add links to documentation. Either on external URL or in the doc folder. Please use always link to a file not to a directory (it doesn't work with static site generator engines).
-
-Add these links:
 
 You can find further documentation and help in the following links
 
