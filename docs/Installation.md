@@ -52,7 +52,7 @@
 
 <p align="center"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
 
-- Before we feed the transformed data into our model creationthe values should be normalized. 
+- Before we feed the transformed data into our model creation the values should be normalized. 
 - Select all normalization blocks by clicking on 'Normalization' (red marked)
 - By clicking on 'Derive from time series data...' (green marked) the scaling and translation factor for each signal is automatically calculated
 
@@ -105,4 +105,4 @@
 <p align="center"><kbd><img src="graphics/14AnomalyView.PNG" /></kbd></p>
 
 - Every time the calculated deviation exceeds the threshold an anomaly is indicated
-- Tge main contributors for a specific anomaly can be indicated by clicking on the anomaly marker (red marked)
+- The main contributors for a specific anomaly can be indicated by clicking on the anomaly marker (red marked)
