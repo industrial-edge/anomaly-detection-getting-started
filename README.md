@@ -42,9 +42,9 @@ This document describes how to create an Anomaly Detection model. This model is 
 ### Used components
 
 * Industrial Edge Device Version simatic-ipc-ied-os-2.0.0-19-x86-64
-* IE Databus V 2.3.1-2
-* IE Essentials V 1.9.0
-* IE Flow Creator V 1.16.0-2
+* Databus V 2.3.1-2
+* IIH Essentials V 1.9.0
+* Flow Creator V 1.16.0-2
 * Anomaly Detection V 1.1.0
 
 
