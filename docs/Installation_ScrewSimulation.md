@@ -1,6 +1,6 @@
 # Installation of screwing simulation
 
-This installation guide shows how to Configure IE Databus, IE Data Service and the IE Flow Creator run a simulation which is then used for the Anomaly Detection algorithm 
+This installation guide shows how to Configure Databus, IIH Essentials and the Flow Creator run a simulation which is then used for the Anomaly Detection algorithm 
 
   - [Used Components](#used-components)
   - [Configure IE Databus](#configure-ie-databus)
