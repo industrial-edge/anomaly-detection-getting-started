@@ -92,7 +92,7 @@
 
 <p align="center"><kbd><img src="graphics/16HideFeatures.PNG" /></kbd></p>
 
-- To filter out outliers and smoothen the deviation function and Moving average with Windowsize 3 should be defined
+- To filter out outliers and smoothen the deviation function and Moving average with Windowsize 5 should be defined
 
 - Now you set the threshold for the calculated anomaly score in that way that it is between 'normal' screwing process and the screwing processes where some abnormal behavior occurred
   
