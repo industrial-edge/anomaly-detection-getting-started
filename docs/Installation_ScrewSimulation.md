@@ -22,7 +22,7 @@ To run the simulation the following components are needed:
  
 ## Configure Databus
 
-First of all, make sure that you have created a databus user which has subscription rights with the topic 'ie/#'.
+First of all, make sure that you have created a databus user which has subscription rights with the topic 'ie/#'
 
 <p align="left"><kbd><img src="graphics/01iedatabus.PNG" /></kbd></p>
 
@@ -30,9 +30,9 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Import Flow
 
-- First open the IE Flow Creator application and open the 'three bar menu' in the top right corner. 
+- First open the IE Flow Creator application and open the 'three bar menu' in the top right corner 
 
-- Select 'Import' or you use the shortcut 'ctrl-i'.
+- Select 'Import' or you use the shortcut 'ctrl-i'
   
 - Import the JSON file which can be downloaded [here](../src).
   
@@ -42,22 +42,22 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Edit Databus Credentials
 
-- After the flow import you have to adapt the databus credentials in the MQTT-Out nodes (red marked).
+- After the flow import you have to adapt the databus credentials in the MQTT-Out nodes (red marked)
 
-- Therefore double click on one of them and select the pen icon next to the 'Server' section (blue marked).
+- Therefore double click on one of them and select the pen icon next to the 'Server' section (blue marked)
 
 <p align="left"><kbd><img src="graphics/06EditDataBus.PNG" /></kbd></p>
 
-- Go to the Security section and enter your databus credentials again.
+- Go to the Security section and enter your databus credentials again
 
 <p align="left"><kbd><img src="graphics/07EditDataBusSecurity.png" /></kbd></p>
 
- - Now you can click on 'Update' and 'Deploy' the flow. 
+ - Now you can click on 'Update' and 'Deploy' the flow
 
 ### Start the Simulation
 
 - By clicking on the timestamp node (green marked) the simulation is started.
-- First the metadata is sent and afterwards recorded values in the included CSV-File are going to be published on the databus every 100ms. 
+- First the metadata is sent and afterwards recorded values in the included CSV-File are going to be published on the databus every 100ms
 
 <p align="left"><kbd><img src="graphics/08StartSimulation.PNG" /></kbd></p>
 
@@ -65,11 +65,11 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Add new connector
 
-- If you haven't set the Databus Settings in the IIH Essentials yet, go to the Settings Section of the IIH Essentials app and configure the default Databus Settings.
+- If you haven't set the Databus Settings in the IIH Essentials yet, go to the Settings Section of the IIH Essentials app and configure the default Databus Settings
     
   <p align="center"><kbd><img src="graphics/11DataBusIIH.PNG" /></kbd></p>
   
-- Now go to the connector Section.
+- Now go to the connector Section
 
 - There you have to add a new connector:
   - Adapter name (you are free to choose a custom name)
@@ -84,9 +84,9 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Add variables to IIH Essentials
 
-- Create a new ‘Asset’.
-- To add new variables to this asset, select the previously created connector.
-- Select all checkboxes next to the six variables and add them to this asset.
+- Create a new ‘Asset’
+- To add new variables to this asset, select the previously created connector
+- Select all checkboxes next to the six variables and add them to this asset
 
 <p align="left"><kbd><img src="graphics/09AddTagsToDataService.PNG" /></kbd></p>
 
