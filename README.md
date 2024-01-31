@@ -22,7 +22,7 @@ This example shows how to use the Industrial Edge app "Anomaly Detection" to ana
 This document describes how to create an Anomaly Detection model. This model is used to detect abnormal behavior in time series data. If an unusual behavior is detected, the app can be used to identify such divergence and in some cases you’ll get a first impression what caused the problem and where to start the further investigation, e.g. to make a deep dive analysis with the Anomaly Detection.
   
 
-![task](docs/graphics/AnalyisView.PNG)
+![task](docs/graphics/14AnomalyView.PNG)
 
 ### General Task
 
@@ -41,11 +41,11 @@ This document describes how to create an Anomaly Detection model. This model is 
 
 ### Used components
 
-* Industrial Edge Device V 1.5.x
-* IE Databus V1.6.6
-* IE Data Service V 1.3.3
-* IE Flow Creator V 1.3.8
-* Anomaly Detection V1.0.0
+* Industrial Edge Device Version simatic-ipc-ied-os-2.0.0-19-x86-64
+* Databus V 2.3.1-2
+* IIH Essentials V 1.9.0
+* Flow Creator V 1.16.0-2
+* Anomaly Detection V 1.1.0
 
 
 ## Configuration steps

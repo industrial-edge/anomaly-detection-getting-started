@@ -13,83 +13,93 @@
   
 ## Start application
 
-- Open the Anomaly Detection App on or IED
+- Open the Anomaly Detection App on your IED
 
-<p align="center"><kbd><img src="graphics/01AD_HomeScreen.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/01AD_HomeScreen.PNG" /></kbd></p>
 
 ### Create new model 
 
-- To create a new model, go to the 'Model generation' section add a new model and give a specific name.
+- To create a new model, go to the 'Model generation' section and add a new model
 
-<p align="center"><kbd><img src="graphics/02NewModel.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/02NewModel.PNG" /></kbd></p>
 
 ### Select data
 
-- Select relevant input data for the Anomaly Detection’s AI
-- Click on the 'Add variable' button and unhide the Asset structure on the left side. 
-- Then select all variables you want to use for model creation (in case you are using the Screw Simulation select all six tags)
-- Next step is to define a sample rate for your input data
+- Select relevant input data for the creation of the Anomaly Detection algorithm 
+- Click on the 'Add variable' button
+- Then select all variables you want to use for model creation (in case you are using the Screw Simulation select all six tags - Fx,Fy,Fz,Tx,Ty,Tz)
 
-<p align="center"><kbd><img src="graphics/03SelectVariables.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/03SelectVariables.PNG" /></kbd></p>
 
 - After you have selected the variables click on the 'Edit' icon in the 'Time range for model generation' section
 - On the top of the window you can enter a time range for displaying the data
 - The time range for the model creation will then be defined in the section at the bottom of the window (red marked)
-- This time range is then marked with the blue section in the data window 
-
-<p align="center"><kbd><img src="graphics/04SetTimeRange.PNG" /></kbd></p>
+- This time range is used for the model creation to learn the relations of the input variables and therefore should not contain anomalies
+  
+<p align="left"><kbd><img src="graphics/04SetTimeRange.PNG" /></kbd></p>
 
 ### Transform and normalize data
 - Before we feed the force values of your screwing simulation into the network we want to perform a data transformation 
-- The Forces Fx and Fy in x and y direction are representing the horizontal force values, in this case we are not interested weather the force is peformed in negativ or positiv direction so we need the absolute value 
-- Therefore click on the 'Data Transformation' section
-- By clicking on the connection between to nodes 'Fx' and 'Normalization' additional transformation nodes can be added, in this case select “abs”
-- Redo this step for the connection between the node 'Fy' and 'Normalization'
+- The values Fx and Fy are representing the horizontal force values in x and y direction, however we are only interested in the resulting horizontal force and therefore have to a little vector addition
+- To do this click on the 'Data Transformation' section
+- By clicking on the connection between the nodes 'Fx' and 'Normalization' additional transformation nodes can be added
 
-<p align="center"><kbd><img src="graphics/05DataTransformation.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/05DataTransformation.PNG" /></kbd></p>
 
+- Add the same transformation nodes to your flow chart as you see it in the picture below
 
+<p align="left"><kbd><img src="graphics/18VariableFlow.PNG" /></kbd></p>
 
-<p align="center"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
+- At the and you can also change the name and the color of the output variables
 
-- Before we feed the transformed data into our model creation the values should be normalized. 
+<p align="left"><kbd><img src="graphics/15ChangeColor.PNG" /></kbd></p>
+
+- Before we feed the transformed data into our model creation the values should be normalized 
 - Select all normalization blocks by clicking on 'Normalization' (red marked)
 - By clicking on 'Derive from time series data...' (green marked) the scaling and translation factor for each signal is automatically calculated
+  
+<p align="left"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
 
-<p align="center"><kbd><img src="graphics/07CalculatedNormalization.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/07CalculatedNormalization.PNG" /></kbd></p>
 
 - Now apply the values
 
 ### Define algorithm and perform model creation
 
 - Change to the 'Algorithm' section
-- Select Full Relationship Analysis (if you use an IPC127 or IPC 227 this algorithm is already selected and cannot be changed)
-- Set the Epochs to 20, which means that the defined time range we previously defined is used 20 times in order to come up with a better model for each epoch. The so called training losses can then be observed for each epoch
-- We will also use a smoothing algorithm: Define a 0.2 Exponential smoothing of the calculated deviation curve which represents the anomaly score
-- Because we will select the threshold for detected anomalies after the model creation we select here the 'Only manually' method
+- Select the Full Relationship Analysis as algorithm
+- Set the batch size down to 4, which means that during the model training 4 time frames are sent through the network simultaneously
+- Set the Epochs to 8, which means that the defined time range we previously defined is used 8 times in order to come up with a better model for each epoch. The so called training losses can then be observed for each epoch
 
-<p align="center"><kbd><img src="graphics/08AlgorithmSetting.PNG" /></kbd></p>
+<p align="left"><kbd><img src="graphics/08AlgorithmSetting.PNG" /></kbd></p>
 
-- Now you can switch to the 'Model calculation' section and start the model creation. 
+- Now you can switch to the 'Model calculation' section and start the model creation
 
 <p align="center"><kbd><img src="graphics/09ClacProcess.PNG" /></kbd></p>
 
-- The model creation may take a while (in this example about 10 - 20 minutes depending on the selected time range and epochs) so feel free to grab a coffee ;-)
+- The model creation may take a while (depending on the selected time range and epochs) so feel free to grab a coffee in the meanwhile ;-)
 
 ### Set threshold and deploy model for Live Anomaly Detection
 
 - The model creation is now completed 
 - The lower your training loss is at the last epoch the better your training performed as you can see in the chart in top right corner 
-
+- In main window you can see the calculated deviations for each tag. A high deviation means that the difference between predicted value und actual value is high 
+  
 <p align="center"><kbd><img src="graphics/10TrainResults.PNG" /></kbd></p>
 
-- To only get the calculated deviation displayed you can hide the feature signal in the 'Features' section (red marked) by clicking on the 'eye' icons
+- As the anomaly detection is an unsupervised learning we have to determine at which threshold an anomaly should be marked  
+- To only get the average calculated deviation displayed you can hide the feature signals in the 'Features' section by clicking on the 'eye' icons
 
+<p align="center"><kbd><img src="graphics/16HideFeatures.PNG" /></kbd></p>
+
+- To filter outliers and smoothen the deviation function a Moving average with "Window size" 5 should be defined.
+
+- Now you set the threshold for the calculated anomaly score in that way that it is between 'normal' screwing process and the screwing processes where some abnormal behavior occurred
+  
 <p align="center"><kbd><img src="graphics/11DeviationDetails.PNG" /></kbd></p>
 
-- Now you set the threshold for the calculated anomaly score in that way that it is between 'normal' screwing process and the screwing processes where some abnormal behavior occurred 
-
 - When the threshold is set, you can finally go to the 'Deploy' section and deploy your just created model in order to execute the Live Anomaly Detection on your live data
+- Here you can also define if the data for the live anomaly detection is taken directly from the Databus or over the IIH Essentials database.
 
 <p align="center"><kbd><img src="graphics/12DeployModel.PNG" /></kbd></p>
 
@@ -105,4 +115,4 @@
 <p align="center"><kbd><img src="graphics/14AnomalyView.PNG" /></kbd></p>
 
 - Every time the calculated deviation exceeds the threshold an anomaly is indicated
-- The main contributors for a specific anomaly can be indicated by clicking on the anomaly marker (red marked)
+- The main contributors for a specific anomaly can be indicated by clicking on the anomaly marker.
