@@ -1,10 +1,10 @@
 # Installation of screwing simulation
 
-This installation guide shows how to Configure Databus, IIH Essentials and the Flow Creator run a simulation which is then used for the Anomaly Detection algorithm 
+This installation guide shows how to Configure the Databus, the IIH Essentials and the Flow Creator to run a simulation which is then used for the Anomaly Detection algorithm 
 
   - [Used Components](#used-components)
-  - [Configure IE Databus](#configure-ie-databus)
-  - [Configure IE Flow Creator](#configure-ie-flow-creator)
+  - [Configure Databus](#configure-databus)
+  - [Configure Flow Creator](#configure-flow-creator)
     - [Import Flow](#import-flow)
     - [Edit Databus Credentials](#edit-databus-credentials)
     - [Start the Simulation](#start-the-simulation)
@@ -20,13 +20,13 @@ To run the simulation the following components are needed:
 - Flow Creator V 1.16.0
 - IIH Essentials V 1.9.0
  
-## Configure IE Databus
+## Configure Databus
 
 First of all, make sure that you have created a databus user which has subscription rights with the topic 'ie/#'.
 
 <p align="left"><kbd><img src="graphics/01iedatabus.PNG" /></kbd></p>
 
-## Configure IE Flow Creator
+## Configure Flow Creator
 
 ### Import Flow
 
@@ -65,11 +65,15 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Add new connector
 
-- Open the IIH Essentials app and go to the connector Section. 
+- Open the IIH Essentials app and go to the connector Section.
 
 - There you have to add a new connector:
-  - Adapter name (you are free to choose your own name)
-  - Set the "Use Databus settings" checkbox to use the predefined Databus Settings from the IIH Essentials app 
+  - Adapter name (you are free to choose a custom name)
+  - Set the "Use Databus settings" checkbox to use the predefined Databus Settings from the IIH Essentials app
+  - If you haven't set the Databus Settings in the IIH Essentials yet, go to the Settings Section of the IIH Essentials app and configure the default Databus Settings.
+    
+  <p align="center"><kbd><img src="graphics/11DataBusIIH.PNG" /></kbd></p>
+  
   - Metadata topic:
     ```
     ie/m/j/simatic/v1/sim/dp
