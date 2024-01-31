@@ -65,15 +65,15 @@ First of all, make sure that you have created a databus user which has subscript
 
 ### Add new connector
 
-- Open the IIH Essentials app and go to the connector Section.
+- If you haven't set the Databus Settings in the IIH Essentials yet, go to the Settings Section of the IIH Essentials app and configure the default Databus Settings.
+    
+  <p align="center"><kbd><img src="graphics/11DataBusIIH.PNG" /></kbd></p>
+  
+- Now go to the connector Section.
 
 - There you have to add a new connector:
   - Adapter name (you are free to choose a custom name)
   - Set the "Use Databus settings" checkbox to use the predefined Databus Settings from the IIH Essentials app
-  - If you haven't set the Databus Settings in the IIH Essentials yet, go to the Settings Section of the IIH Essentials app and configure the default Databus Settings.
-    
-  <p align="center"><kbd><img src="graphics/11DataBusIIH.PNG" /></kbd></p>
-  
   - Metadata topic:
     ```
     ie/m/j/simatic/v1/sim/dp
