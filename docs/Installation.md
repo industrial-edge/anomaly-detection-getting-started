@@ -19,14 +19,14 @@
 
 ### Create new model 
 
-- To create a new model, go to the 'Model generation' section add a new model.
+- To create a new model, go to the 'Model generation' section and add a new model
 
 <p align="left"><kbd><img src="graphics/02NewModel.PNG" /></kbd></p>
 
 ### Select data
 
-- Select relevant input data for the creation of the Anomaly Detection algorithm. 
-- Click on the 'Add variable' button.
+- Select relevant input data for the creation of the Anomaly Detection algorithm 
+- Click on the 'Add variable' button
 - Then select all variables you want to use for model creation (in case you are using the Screw Simulation select all six tags - Fx,Fy,Fz,Tx,Ty,Tz)
 
 <p align="left"><kbd><img src="graphics/03SelectVariables.PNG" /></kbd></p>
@@ -40,24 +40,24 @@
 
 ### Transform and normalize data
 - Before we feed the force values of your screwing simulation into the network we want to perform a data transformation 
-- The Forces Fx and Fy are representing the horizontal force values in x and y direction, however we are only interested in the resulting horizontal force and therefore have to a little vector addition
+- The values Fx and Fy are representing the horizontal force values in x and y direction, however we are only interested in the resulting horizontal force and therefore have to a little vector addition
 - To do this click on the 'Data Transformation' section
-- By clicking on the connection between the nodes 'Fx' and 'Normalization' additional transformation nodes can be added.
+- By clicking on the connection between the nodes 'Fx' and 'Normalization' additional transformation nodes can be added
 
 <p align="left"><kbd><img src="graphics/05DataTransformation.PNG" /></kbd></p>
 
-- Add the same transformation nodes to your flow chart as you see it in the picture below.
+- Add the same transformation nodes to your flow chart as you see it in the picture below
 
 <p align="left"><kbd><img src="graphics/18VariableFlow.PNG" /></kbd></p>
 
-- At the and you can also change the name and the color of the output variables.
+- At the and you can also change the name and the color of the output variables
 
 <p align="left"><kbd><img src="graphics/15ChangeColor.PNG" /></kbd></p>
 
-- Before we feed the transformed data into our model creation the values should be normalized. 
+- Before we feed the transformed data into our model creation the values should be normalized 
 - Select all normalization blocks by clicking on 'Normalization' (red marked)
 - By clicking on 'Derive from time series data...' (green marked) the scaling and translation factor for each signal is automatically calculated
-- 
+  
 <p align="left"><kbd><img src="graphics/06SelectNormalizationBlocks.PNG" /></kbd></p>
 
 <p align="left"><kbd><img src="graphics/07CalculatedNormalization.PNG" /></kbd></p>
@@ -67,13 +67,13 @@
 ### Define algorithm and perform model creation
 
 - Change to the 'Algorithm' section
-- Select Full Relationship Analysis (if you use an IPC 127 or IPC 227 this algorithm is already selected and cannot be changed)
-- Set the batch size down to 4, which means that during the model training 4 time frames are sent through the network simultaneously.
-- Set the Epochs to 8, which means that the defined time range we previously defined is used 8 times in order to come up with a better model for each epoch. The so called training losses can then be observed for each epoch.
+- Select the Full Relationship Analysis as algorithm
+- Set the batch size down to 4, which means that during the model training 4 time frames are sent through the network simultaneously
+- Set the Epochs to 8, which means that the defined time range we previously defined is used 8 times in order to come up with a better model for each epoch. The so called training losses can then be observed for each epoch
 
 <p align="left"><kbd><img src="graphics/08AlgorithmSetting.PNG" /></kbd></p>
 
-- Now you can switch to the 'Model calculation' section and start the model creation. 
+- Now you can switch to the 'Model calculation' section and start the model creation
 
 <p align="center"><kbd><img src="graphics/09ClacProcess.PNG" /></kbd></p>
 
@@ -83,16 +83,16 @@
 
 - The model creation is now completed 
 - The lower your training loss is at the last epoch the better your training performed as you can see in the chart in top right corner 
-- In main window you can see the calculated deviations for each tag. A high deviation means that the difference between predicted value und actual value is high. 
+- In main window you can see the calculated deviations for each tag. A high deviation means that the difference between predicted value und actual value is high 
   
 <p align="center"><kbd><img src="graphics/10TrainResults.PNG" /></kbd></p>
 
-- As the anomaly detection is an unsupervised learning we have to determine at which threshold an anomaly should be marked.  
+- As the anomaly detection is an unsupervised learning we have to determine at which threshold an anomaly should be marked  
 - To only get the average calculated deviation displayed you can hide the feature signals in the 'Features' section by clicking on the 'eye' icons
 
 <p align="center"><kbd><img src="graphics/16HideFeatures.PNG" /></kbd></p>
 
-- To filter out outliers and smoothen the deviation function and Moving average with Windowsize 5 should be defined
+- To filter outliers and smoothen the deviation function a Moving average with "Window size" 5 should be defined.
 
 - Now you set the threshold for the calculated anomaly score in that way that it is between 'normal' screwing process and the screwing processes where some abnormal behavior occurred
   
